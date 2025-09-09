@@ -83,3 +83,12 @@ def test_ta_te_ti_ganador(self):
         ["O", "X", "O"],
         ["X", "O", " "]
     ]
+# Debería devolver "continua"
+    assert self.games.ta_te_ti_ganador(tablero_continua) == "continua"
+
+    # Tablero con un ganador "X"
+    tablero_ganador_x = [
+        ["X", "X", "X"],
+        ["O", "O", " "],
+        [" ", " ", " "]
+    ]
