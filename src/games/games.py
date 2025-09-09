@@ -74,3 +74,12 @@ class Games:
                 if tablero[f][dc] != " ":
                     return False
         return True
+    
+# Ejemplo de prueba con corrección aplicada
+def test_ta_te_ti_ganador(self):
+    # Tablero en estado "continua"
+    tablero_continua = [
+        ["X", "O", "X"],
+        ["O", "X", "O"],
+        ["X", "O", " "]
+    ]
