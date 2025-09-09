@@ -92,3 +92,18 @@ def test_ta_te_ti_ganador(self):
         ["O", "O", " "],
         [" ", " ", " "]
     ]
+   # Debería devolver "X"
+    assert self.games.ta_te_ti_ganador(tablero_ganador_x) == "X"
+
+    # Tablero con empate
+    tablero_empate = [
+        ["X", "O", "X"],
+        ["O", "X", "O"],
+        ["X", "O", "X"]
+    ]
+    # Debería devolver "empate"
+    assert self.games.ta_te_ti_ganador(tablero_empate) == "empate"
+
+# Para ejecutar las pruebas, sería algo como:
+# game = Games()
+# game.test_ta_te_ti_ganador()
